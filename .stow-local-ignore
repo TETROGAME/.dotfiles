@@ -1,0 +1,17 @@
+# Compiled zsh completion cache files — regenerated automatically,
+# shouldn't be symlinked or committed
+\.zwc$
+
+# README / docs you keep inside packages for your own reference,
+# not meant to be symlinked into $HOME
+^/README\.md$
+^/[^/]+/README\.md$
+
+# OS/editor cruft that might sneak into a package dir
+\.DS_Store$
+^\.idea$
+^\.vscode$
+
+# Backup files you might leave lying around while editing
+~$
+\.bak$

@@ -1,0 +1,25 @@
+layout {
+    // 1. Define the UI chrome once
+    default_tab_template {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        children // Your actual tab content gets injected here
+        pane size=1 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+
+    // 2. Define your specific tabs
+    tab name="code" focus=true hide_floating_panes=true {
+        pane command="/home/tetrogame/.local/share/bob/v0.12.2/bin/nvim" focus=true
+    }
+    
+    tab name="run" hide_floating_panes=true {
+        pane
+    } 
+
+    tab name="git" hide_floating_panes=true {
+        pane
+    }
+}

@@ -1,0 +1,53 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// Thorn — Zellij theme
+// Ported from jpwol/thorn.nvim (https://github.com/jpwol/thorn.nvim)
+// Two variants: thorn-forest (dark) and thorn-field (light)
+//
+// INSTALLATION — standalone theme files (recommended)
+// ────────────────────────────────────────────────────
+// 1. Copy this file to ~/.config/zellij/themes/thorn.kdl
+// 2. Add ONE of the following lines to your ~/.config/zellij/config.kdl:
+//
+//      theme "thorn-forest"   // dark green
+//      theme "thorn-field"    // light green
+//
+// INSTALLATION — inline in config.kdl
+// ─────────────────────────────────────
+// Paste the themes { … } block directly into your config.kdl, then set the
+// theme key as above.
+// ─────────────────────────────────────────────────────────────────────────────
+
+themes {
+
+    // ── Forest (dark) ────────────────────────────────────────────────────────
+    thorn-forest {
+        bg      "#172526"   // deep forest background
+        fg      "#DBD2C7"   // warm off-white foreground
+
+        black   "#172526"
+        red     "#D2696C"
+        green   "#88B497"
+        yellow  "#FFD7AA"
+        blue    "#91C4C0"
+        magenta "#F9ADA0"
+        cyan    "#87CBB1"
+        white   "#A1A790"
+        orange  "#F2A597"
+    }
+
+    // ── Field (light) ────────────────────────────────────────────────────────
+    thorn-field {
+        bg      "#F9FDCE"   // pale lime background
+        fg      "#3D4A2B"   // dark olive foreground
+
+        black   "#F9FDCE"
+        red     "#C5524D"
+        green   "#5D922E"
+        yellow  "#DCA838"
+        blue    "#3B9180"
+        magenta "#CF7859"
+        cyan    "#0D9039"
+        white   "#747A62"
+        orange  "#CF7859"
+    }
+}

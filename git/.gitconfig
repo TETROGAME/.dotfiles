@@ -1,0 +1,5 @@
+[user]
+	name = Nikita Timoshenko
+	email = nikita.timoshenko.dev@gmail.com
+[credential]
+	helper = store

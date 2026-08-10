@@ -1,0 +1,26 @@
+// Thorn Forest — dark variant
+// Ported from jpwol/thorn.nvim
+// Place this file in ~/.config/zellij/themes/
+// Then set `theme "thorn-forest"` in your config.kdl
+
+themes {
+    thorn-forest {
+        // Base
+        bg "#172526"
+        fg "#DBD2C7"
+
+        // ANSI palette
+        black   "#172526"
+        red     "#D2696C"
+        green   "#88B497"
+        yellow  "#FFD7AA"
+        blue    "#91C4C0"
+        magenta "#F9ADA0"
+        cyan    "#87CBB1"
+        white   "#A1A790"
+
+        // Bright variants
+        // Zellij uses these automatically for bold/bright text
+        orange  "#F2A597"
+    }
+}

@@ -1,0 +1,25 @@
+// Thorn Field — light variant
+// Ported from jpwol/thorn.nvim
+// Place this file in ~/.config/zellij/themes/
+// Then set `theme "thorn-field"` in your config.kdl
+
+themes {
+    thorn-field {
+        // Base
+        bg "#F9FDCE"
+        fg "#3D4A2B"
+
+        // ANSI palette
+        black   "#F9FDCE"
+        red     "#C5524D"
+        green   "#5D922E"
+        yellow  "#DCA838"
+        blue    "#3B9180"
+        magenta "#CF7859"
+        cyan    "#0D9039"
+        white   "#747A62"
+
+        // Bright variants
+        orange  "#CF7859"
+    }
+}

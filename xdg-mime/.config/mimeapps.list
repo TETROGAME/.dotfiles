@@ -1,0 +1,26 @@
+[Default Applications]
+text/html=google-chrome.desktop
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/about=google-chrome.desktop
+x-scheme-handler/unknown=google-chrome.desktop
+x-scheme-handler/jetbrains=jetbrains-toolbox.desktop
+x-scheme-handler/mailto=thunderbird_thunderbird.desktop
+x-scheme-handler/mid=thunderbird_thunderbird.desktop
+application/x-tar=com.navicat.modeler.en.mime.desktop
+application/pdf=org.gnome.Evince.desktop
+image/vnd.djvu+multipage=org.gnome.Evince.desktop
+image/png=org.gnome.Loupe.desktop
+image/jpeg=org.gnome.Loupe.desktop
+text/plain=org.gnome.TextEditor.desktop
+x-scheme-handler/discord-1216669957799018608=discord-1216669957799018608.desktop
+x-scheme-handler/claude=claude-desktop.desktop
+
+[Added Associations]
+text/x-java=org.gnome.TextEditor.desktop;
+application/x-tar=com.navicat.modeler.en.mime.desktop;
+application/pdf=org.gnome.Papers.desktop;org.gnome.Evince.desktop;
+image/vnd.djvu+multipage=org.gnome.Evince.desktop;
+image/png=org.gnome.Loupe.desktop;
+image/jpeg=org.gnome.Loupe.desktop;
+text/plain=org.gnome.TextEditor.desktop;
