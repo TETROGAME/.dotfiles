@@ -416,7 +416,7 @@ window-rule {
     match app-id="com.mitchellh.ghostty"
     match app-id="kitty"
     draw-border-with-background false
-    // open-maximized true
+    open-maximized true
 
 }
 window-rule {
