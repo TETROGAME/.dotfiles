@@ -4,7 +4,7 @@
         "source": "~/.config/fastfetch/images/nanachi-icon.txt",
     	"type": "raw",
         // "type": "builtin",
-        "position": "top",
+        // "position": "top",
         "height": 30,
         "width": 65,
         "padding": {
