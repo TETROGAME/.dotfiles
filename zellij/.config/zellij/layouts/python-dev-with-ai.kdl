@@ -18,7 +18,11 @@ layout {
     tab name="run" hide_floating_panes=true {
         pane
     } 
-
+	tab name="AI" hide_floating_panes=true {
+        pane command="zsh" {
+            args "-c" "source ~/.zshrc; opencode_launcher"
+        }
+    }
     tab name="git" hide_floating_panes=true {
         pane
     }
