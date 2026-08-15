@@ -12,6 +12,8 @@
 // Enable Noctalia:
 spawn-sh-at-startup "noctalia"
 
+// Polkit-gnome auto startup for proper login via noctalia-greeter
+spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 
 // This config is in the KDL format: https://kdl.dev
 // "/-" comments out the following node.
@@ -107,7 +109,9 @@ binds {
 
     // === Application Launchers ===
     Mod+T { spawn "ghostty"; }
-    Mod+Return { spawn "ghostty"; } 
+    Mod+Return { spawn "ghostty"; }
+    Mod+A { spawn "ghostty" "-e" "zsh" "-i" "-c" "y"; }
+
 
     // === Audio & Brightness ===
     XF86AudioRaiseVolume { spawn-sh "noctalia msg volume-up"; }
@@ -450,6 +454,7 @@ layer-rule{
 }
 window-rule{
 	match app-id="app.zen_browser.zen"
+	match app-id="zen"
 	match app-id="com.mitchellh.ghostty"
 	match app-id="Spotify"
 	background-effect {
