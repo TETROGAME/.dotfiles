@@ -11,7 +11,7 @@ fi
 
 
 # Activate homebrew on startup
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 
 # Path to your Oh My Zsh installation.
@@ -217,12 +217,24 @@ compdef _zl_layouts zl
 alias dns-switch="~/.toggle-dns.sh"
 alias sp="spotify_player"
 alias venv-activate='eval $(poetry env activate)'
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 export PATH=~/.npm-global/bin:$PATH
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
 
 # opencode
 export PATH=/home/tetrogame/.opencode/bin:$PATH
+
+# Auto cd to pwd when exit yazi
+function y() {
+	local tmp cwd; tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	command yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd" || builtin true
+	command rm -f -- "$tmp"
+}
