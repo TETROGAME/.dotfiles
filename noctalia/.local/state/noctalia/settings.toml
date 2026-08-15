@@ -1,4 +1,4 @@
-config_version = 8
+config_version = 12
 
 [audio]
 enable_overdrive = true
@@ -181,6 +181,9 @@ niri_overview_type_to_launch_enabled = true
 popup_shadows = false
 screen_time_enabled = true
 
+    [shell.greeter_sync]
+    auto_sync = true
+
     [shell.panel]
     launcher_placement = "attached"
 
@@ -191,13 +194,12 @@ screen_time_enabled = true
 builtin = "Catppuccin"
 community_palette = "Tokyo Night Storm"
 custom_palette = "sayori-ts"
-mode = "dark"
 source = "custom"
 wallpaper_scheme = "soft"
 
     [theme.templates]
     builtin_ids = [ "ghostty" ]
-    community_ids = [ "telegram", "zellij" ]
+    community_ids = [ "telegram", "zellij", "yazi" ]
 
 [wallpaper]
 directory = "/home/tetrogame/Pictures/Wallpaper"
@@ -246,9 +248,12 @@ hidden = [ "Update-notifier" ]
 
 [widget.widget]
 color = "primary"
+enabled = false
 icon_color = "on_primary"
 type = "thepunkoff/pomodoro:widget"
 
 [widget.workspaces]
-display = "none"
+focused_color = "on_secondary"
 hide_when_empty = true
+occupied_color = "primary"
+show_labels = false
