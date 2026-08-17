@@ -33,7 +33,7 @@ order = [ "default" ]
     font_family = "JetBrainsMono NF"
     margin_ends = 200
     radius = 33
-    start = [ "launcher", "wallpaper", "workspaces", "media" ]
+    start = [ "launcher", "wallpaper", "mpvpaper", "workspaces", "media" ]
 
 [brightness]
 enable_ddcutil = true
@@ -162,6 +162,15 @@ compositor = "niri"
 manager_placement = "attached"
 manager_position = "top_center"
 
+[plugin_settings."kenn/keybind-cheatsheet"]
+cheatsheet_open_near_click = false
+compositor = "niri"
+niri_config = "/home/tetrogame/.dotfiles/niri/.config/niri/config.kdl"
+show_actions = true
+
+[plugin_settings."noctalia/mpvpaper"]
+video_directory = "/home/tetrogame/Videos/Wallpaper"
+
 [plugin_settings."oldirtty/color_picker"]
 hyprpicker-lowercase = true
 panel_position = "top_center"
@@ -171,8 +180,12 @@ panel_open_near_click = false
 panel_placement = "attached"
 panel_position = "top_center"
 
+[plugin_settings."yuuto/arch-updater"]
+aur_helper = "yay"
+panel_open_near_click = false
+
 [plugins]
-enabled = [ "apex077/eyecare", "dotnetrob/cat", "davemhammer/tailscale", "weinguyen/procmon", "thepunkoff/pomodoro" ]
+enabled = [ "apex077/eyecare" ]
 
 [shell]
 app_icon_color = "primary"
@@ -180,9 +193,6 @@ font_family = "0xProto Nerd Font"
 niri_overview_type_to_launch_enabled = true
 popup_shadows = false
 screen_time_enabled = true
-
-    [shell.greeter_sync]
-    auto_sync = true
 
     [shell.panel]
     launcher_placement = "attached"
@@ -194,12 +204,13 @@ screen_time_enabled = true
 builtin = "Catppuccin"
 community_palette = "Tokyo Night Storm"
 custom_palette = "sayori-ts"
+mode = "dark"
 source = "custom"
 wallpaper_scheme = "soft"
 
     [theme.templates]
     builtin_ids = [ "ghostty" ]
-    community_ids = [ "telegram", "zellij", "yazi" ]
+    community_ids = [ "spicetify", "zen-browser", "telegram", "zellij", "yazi" ]
 
 [wallpaper]
 directory = "/home/tetrogame/Pictures/Wallpaper"
@@ -235,6 +246,9 @@ art_size = 24
 hide_when_no_media = true
 title_scroll = "on_hover"
 
+[widget.mpvpaper]
+type = "noctalia/mpvpaper:mpvpaper"
+
 [widget.network]
 show_label = false
 show_vpn_label = true
@@ -247,10 +261,7 @@ drawer = true
 hidden = [ "Update-notifier" ]
 
 [widget.widget]
-color = "primary"
-enabled = false
-icon_color = "on_primary"
-type = "thepunkoff/pomodoro:widget"
+type = "yuuto/arch-updater:widget"
 
 [widget.workspaces]
 focused_color = "on_secondary"
