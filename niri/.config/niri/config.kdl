@@ -110,7 +110,9 @@ binds {
     // === Application Launchers ===
     Mod+T { spawn "ghostty"; }
     Mod+Return { spawn "ghostty"; }
-    Mod+A { spawn "ghostty" "-e" "zsh" "-i" "-c" "y"; }
+    Mod+A { spawn "ghostty" "-e" "zsh" "-i" "-c" "y; exec zsh -i"; }
+    Mod+M { spawn "Telegram"; }
+    Mod+B { spawn "zen-browser"; }
 
 
     // === Audio & Brightness ===
