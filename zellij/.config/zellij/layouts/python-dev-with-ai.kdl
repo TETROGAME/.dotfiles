@@ -12,7 +12,7 @@ layout {
 
     // 2. Define your specific tabs
     tab name="code" focus=true hide_floating_panes=true {
-        pane command="/home/tetrogame/.local/share/bob/v0.12.2/bin/nvim" focus=true
+        pane command="/usr/bin/nvim" focus=true
     }
     
     tab name="run" hide_floating_panes=true {
