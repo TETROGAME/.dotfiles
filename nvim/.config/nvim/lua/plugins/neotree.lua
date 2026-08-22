@@ -8,6 +8,9 @@ return {
 	},
 	lazy = false,
 	opts = {
+		-- rounded border on rename/filter/etc popups (doesn't inherit
+		-- vim.o.winborder since neo-tree builds these via nui.nvim)
+		popup_border_style = "rounded",
 		window = {
 			position = "left",
 			width = 25,

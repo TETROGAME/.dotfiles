@@ -3,7 +3,11 @@ return {
 	{
 		"williamboman/mason.nvim",
 		config = function()
-			require("mason").setup()
+			require("mason").setup({
+				ui = {
+					border = "rounded", -- Mason's window doesn't inherit vim.o.winborder
+				},
+			})
 		end
 	},
 

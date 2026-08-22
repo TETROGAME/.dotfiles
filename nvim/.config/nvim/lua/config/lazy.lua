@@ -32,4 +32,9 @@ require("lazy").setup({
 	install = { colorscheme = { "habamax" } },
 	-- automatically check for plugin updates
 	checker = { enabled = true },
+	-- rounded border on the Lazy UI window itself (doesn't inherit
+	-- vim.o.winborder)
+	ui = {
+		border = "rounded",
+	},
 })

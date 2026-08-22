@@ -17,10 +17,13 @@ return {
 	},
 	opts = {
 		defaults = {
-			-- Замени "gdrive" на точное название твоей примонтированной папки
+			-- Rounded border to match the rest of the glass look
+			-- (Telescope builds its floats itself, so it doesn't
+			-- inherit vim.o.winborder).
+			border = true,
+			borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
+
 			file_ignore_patterns = {
-				"gdrive/.*", -- Игнорируем Google Drive
-				"node_modules/.*", -- Игнорируем тяжелые папки с пакетами (на будущее)
 				"%.git/.*", -- Игнорируем внутренности git
 			},
 		},
