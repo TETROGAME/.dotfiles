@@ -222,6 +222,7 @@ compdef _zl_layouts zl
 alias dns-switch="~/.toggle-dns.sh"
 alias sp="spotify_player"
 alias venv-activate='eval $(poetry env activate)'
+alias open="xdg-open"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
