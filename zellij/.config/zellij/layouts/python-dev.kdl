@@ -20,6 +20,6 @@ layout {
     } 
 
     tab name="git" hide_floating_panes=true {
-        pane
+        pane command="lazygit"
     }
 }
