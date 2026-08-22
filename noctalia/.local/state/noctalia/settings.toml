@@ -1,4 +1,4 @@
-config_version = 12
+config_version = 13
 
 [audio]
 enable_overdrive = true
@@ -107,6 +107,8 @@ widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@eDP-1" ]
     cx = 960.0
     cy = 898.0
     output = "HDMI-A-1"
+    placement_height = 0.0
+    placement_width = 0.0
     rotation = 0.0
     type = "login_box"
 
@@ -132,6 +134,8 @@ widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@eDP-1" ]
     cx = 768.0
     cy = 778.0
     output = "eDP-1"
+    placement_height = 960.0
+    placement_width = 1536.0
     rotation = 0.0
     type = "login_box"
 
