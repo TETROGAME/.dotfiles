@@ -39,8 +39,10 @@ vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>", { desc = "Clear search highl
 
 -- 1. Вызвать меню быстрых исправлений (Code Actions)
 vim.keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, { desc = "Показать варианты исправления ошибки" })
+vim.keymap.set({ 'n', 'v' }, '<leader>ce', function()
+	vim.diagnostic.open_float({ border = 'rounded', max_width = 80 })
+end, { desc = 'Show full diagnostic float' })
 
--- 2. Явно отформатировать файл (если не хочешь жать :w)
 
 vim.g.python3_host_prog = '/usr/bin/python3'
 vim.g.loaded_perl_provider = 0
